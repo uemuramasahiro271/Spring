@@ -7,7 +7,7 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import example.app.Form.EchoForm;
+import example.app.form.EchoForm;
 
 @Controller
 @RequestMapping("echo")

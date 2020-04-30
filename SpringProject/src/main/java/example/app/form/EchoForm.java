@@ -1,4 +1,4 @@
-package example.app.Form;
+package example.app.form;
 
 import java.io.Serializable;
 
