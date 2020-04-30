@@ -58,7 +58,11 @@
         </init-param>
         <init-param>
             <param-name>contextConfigLocation</param-name>
-            <param-value>example.config.WebMvcConfig</param-value>
+            <param-value>
+	            example.config.PoolingDataSourceConfig,
+	            example.config.JpaConfig,
+	            example.config.WebMvcConfig
+            </param-value>
         </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>

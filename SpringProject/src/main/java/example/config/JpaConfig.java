@@ -17,7 +17,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
 @EnableTransactionManagement
-@EnableJpaRepositories("example.app.Repository")
+@EnableJpaRepositories("example.app.repository")
 @PropertySource("classpath:jdbc.properties")
 public class JpaConfig {
 
@@ -36,7 +36,7 @@ public class JpaConfig {
 	public LocalContainerEntityManagerFactoryBean entityManagerFactoryBean(DataSource dataSource) {
 		LocalContainerEntityManagerFactoryBean factory = new LocalContainerEntityManagerFactoryBean();
 		factory.setDataSource(dataSource);
-		factory.setPackagesToScan("example.app.Entity");
+		factory.setPackagesToScan("example.app.entity");
 		factory.setJpaVendorAdapter(jpaVendorAdapter());
 		return factory;
 	}
