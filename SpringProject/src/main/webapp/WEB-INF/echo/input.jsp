@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Echoアプリケーション</title>
 </head>
 <body>
 	<h2>入力画面</h2>
