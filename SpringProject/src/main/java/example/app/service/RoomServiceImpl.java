@@ -45,6 +45,7 @@ public class RoomServiceImpl {
 		return room;
 	}
 
+	@Transactional
 	public void deleteRoom(Integer id) {
 		roomRepository.delete(id);
 	}

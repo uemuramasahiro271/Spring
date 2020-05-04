@@ -1,15 +1,12 @@
 package example.app.entity;
 
 import java.io.Serializable;
-import java.util.List;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -27,8 +24,8 @@ public class Room implements Serializable{
 	@Column(name = "capacity")
 	private Integer capacity;
 
-	@OneToMany(mappedBy = "room", cascade = CascadeType.ALL)
-	private List<Equipment> equipments;
+//	@OneToMany(mappedBy = "room", cascade = CascadeType.ALL)
+//	private List<Equipment> equipments;
 
 	public Integer getRoomId() {
 		return roomId;
@@ -54,11 +51,11 @@ public class Room implements Serializable{
 		this.capacity = capacity;
 	}
 
-	public List<Equipment> getEquipments() {
-		return equipments;
-	}
-
-	public void setEquipments(List<Equipment> equipments) {
-		this.equipments = equipments;
-	}
+//	public List<Equipment> getEquipments() {
+//		return equipments;
+//	}
+//
+//	public void setEquipments(List<Equipment> equipments) {
+//		this.equipments = equipments;
+//	}
 }

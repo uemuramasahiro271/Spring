@@ -1,3 +1,13 @@
+example\app\service\RoomServiceImpl.class
+example\config\JpaConfig.class
+example\app\controller\EchoController.class
+example\app\repository\RoomRepository.class
 example\config\AppConfig.class
+example\app\entity\Room.class
+example\app\form\EchoForm.class
+example\app\entity\Equipment.class
 example\app\controller\AppController.class
+example\app\form\CrudForm.class
+example\config\PoolingDataSourceConfig.class
+example\app\controller\CrudController.class
 example\config\WebMvcConfig.class
