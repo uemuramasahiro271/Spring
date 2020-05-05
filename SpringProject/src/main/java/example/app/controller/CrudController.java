@@ -28,13 +28,6 @@ public class CrudController {
 		return "crud/input";
 	}
 
-//	@RequestMapping(method = RequestMethod.POST)
-//	public String echo(CrudForm form) {
-//		UpdateRoomList(form);
-//
-//		return "crud/input";
-//	}
-
 	@RequestMapping(value = "/add", method = RequestMethod.POST)
 	public String jpaAdd(CrudForm form, Model model) {
 
