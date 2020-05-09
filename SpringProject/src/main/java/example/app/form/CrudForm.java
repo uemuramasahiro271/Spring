@@ -3,11 +3,8 @@ package example.app.form;
 import java.io.Serializable;
 import java.util.List;
 
-import javax.persistence.Entity;
-
 import example.app.entity.Room;
 
-@Entity
 public class CrudForm implements Serializable{
 
 	private static final long serialVersionUID = 1;

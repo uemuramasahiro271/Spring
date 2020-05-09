@@ -9,23 +9,35 @@
 <body>
 	<p>追加</p>
 	<form:form modelAttribute="crudForm" action='/SpringProject/crud/add' method="post">
-		<form:input path="roomName"></form:input>
-<%-- 		<form:input path="capacity"></form:input> --%>
-		<input type="submit" value="追加">
+		<div>
+			Name :
+			<form:input path="roomName"></form:input>
+	<%-- 		<form:input path="capacity"></form:input> --%>
+			<input type="submit" value="追加">
+		</div>
 	</form:form>
 
 	<p>編集</p>
 	<form:form modelAttribute="crudForm" action='/SpringProject/crud/edit' method="post">
-		<form:input path="id"></form:input>
-		<form:input path="roomName"></form:input>
-		<input type="submit" value="編集">
+		<div>
+			ID :
+			<form:input path="id"></form:input>
+			Name :
+			<form:input path="roomName"></form:input>
+			<input type="submit" value="編集">
+		</div>
 	</form:form>
+
 
 	<p>削除</p>
 	<form:form modelAttribute="crudForm" action='/SpringProject/crud/delete' method="post">
-		<form:input path="id"></form:input>
-		<input type="submit" value="削除">
+		<div>
+			ID :
+			<form:input path="id"></form:input>
+			<input type="submit" value="削除">
+		</div>
 	</form:form>
+
 
 	<p>---------------------------------------------------------------------------</p>
 	<p>結果</p>

@@ -22,7 +22,13 @@
     </context-param>
     <context-param>
         <param-name>contextConfigLocation</param-name>
-        <param-value>example.config.AppConfig</param-value>
+        <param-value>
+        example.config.AppConfig,
+        example.config.PoolingDataSourceConfig,
+        example.config.JpaConfig,
+        example.config.WebMvcConfig,
+        example.config.WebSecurityConfig
+        </param-value>
     </context-param>
 
     <filter>
@@ -54,14 +60,6 @@
             <param-name>contextClass</param-name>
             <param-value>
                 org.springframework.web.context.support.AnnotationConfigWebApplicationContext
-            </param-value>
-        </init-param>
-        <init-param>
-            <param-name>contextConfigLocation</param-name>
-            <param-value>
-	            example.config.PoolingDataSourceConfig,
-	            example.config.JpaConfig,
-	            example.config.WebMvcConfig
             </param-value>
         </init-param>
         <load-on-startup>1</load-on-startup>
