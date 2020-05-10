@@ -1,3 +1,5 @@
+example\app\controller\AccountRegistrationController.class
+example\app\service\AccountServiceImpl.class
 example\app\service\AccountUserDetailsService.class
 example\app\service\RoomServiceImpl.class
 example\config\JpaConfig.class
@@ -5,11 +7,14 @@ example\app\controller\EchoController.class
 example\app\repository\RoomRepository.class
 example\app\security\AccountUserDetails.class
 example\config\AppConfig.class
+example\app\form\AccountRegistrationForm.class
 example\app\controller\AuthenticationController.class
+example\app\form\AccountForm.class
 example\app\entity\Room.class
 example\config\WebSecurityConfig.class
 example\app\form\EchoForm.class
 example\app\entity\Equipment.class
+example\app\security\AuthenticationEventListeners.class
 example\app\controller\AppController.class
 example\app\form\CrudForm.class
 example\app\repository\AccountRepository.class

@@ -26,6 +26,9 @@
 				<td>&nbsp;</td>
 				<td><button>ログイン</button></td>
 			</tr>
+			<tr>
+				<td><a href="<c:url value='/accountRegister' />">新規登録</a></td>
+			</tr>
 		</table>
 
 	</form:form>
